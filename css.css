@@ -26,7 +26,10 @@
     font-family: 'Trojan', sans-serif;
     padding-top: 30px;
     text-align: center;
-    color: white;
+    background: linear-gradient(180deg, #EEEEEE 0%, rgba(238, 238, 238, 0.4) 170.22%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px;
 }
 .textTop {
     display: flex;
@@ -63,14 +66,8 @@
 .hole {
     width: 121px;
     height: 134px;
-    /* border: 1px solid black; */
     background: url(img/barrel2.svg);
-    /* background-size: cover; */
-    /* background-position: top;
-    background-attachment: top; */
-    /* background-color: #D9D9D9; */
-    
-    /* z-index: 2; */
+    background-size: cover;
     z-index: 2;
 }
 
@@ -82,15 +79,9 @@
 }
 .price {
     position: absolute;
-    /* align-self: center; */
-    /* justify-self: center; */
     z-index: 1;
-    
     width: 85px;
     height: 85px;
-    /* border-left: 30px solid transparent;
-	border-right: 30px solid transparent;
-	border-bottom: 60px solid red; */
     transition: bottom 1s ease;
     margin-right: 20px;
     background: url("img/meepo.svg");
@@ -101,8 +92,6 @@
 }
 .anim {
     bottom: 90px;
-    
-    
 }
 
 
