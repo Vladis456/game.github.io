@@ -59,6 +59,7 @@ price.forEach(item => {
 });
 
 endButton.addEventListener("click", ()=> {
+    gameTime = 60;
     clearTimeout(timer)
     alert("gg")
 })
