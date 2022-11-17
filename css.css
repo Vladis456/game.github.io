@@ -1,48 +1,52 @@
 * {
-    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
 }
+@font-face {
+    font-family: "Trojan";
+    src: url(font/TrajanPro3Bold.woff2);
+}
+
 .container {
-    width: 468px;
-    height: 415px;
-    margin-top: 100px;
+    width: 588px;
+    height: 535px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     background-color: #A6A6A6;
-   
+    background: url("./img/image\ 1.png");
+    background-position: center;
+    background-size: cover;
 }
-.fTitle {
-    background-color: #F0F35E;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.title {
-    padding: 10px 0;
-    font-size: 20px;
-    font-family: sans-serif;
-    width: 250px;
-    text-align: center;
-    font-weight: 400;
 
+.title {
+    font-size: 30px;
+    font-family: 'Trojan', sans-serif;
+    padding-top: 30px;
+    text-align: center;
+    color: white;
 }
 .textTop {
     display: flex;
     justify-content: space-between;
-    padding: 0 12px;
-    margin-bottom: 30px;
-   
+    padding: 0 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+   color: white;
 }
 .hole-container {
-    position: relative;
+    margin-left: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
+    position: relative;
 }
 .textBottom {
     display: flex;
     justify-content: space-between;
-    padding: 0 12px 20px;
-    
+    padding: 0 20px 20px;
 }
 .holes {
     display: grid;
@@ -55,15 +59,18 @@
     row-gap: 50px;
     margin-bottom: 30px;
     margin-left: 20px;
-    
 }
 .hole {
-    width: 120px;
-    height: 60px;
-    border: 1px solid black;
+    width: 121px;
+    height: 134px;
+    /* border: 1px solid black; */
+    background: url(img/barrel2.svg);
+    /* background-size: cover; */
+    /* background-position: top;
+    background-attachment: top; */
+    /* background-color: #D9D9D9; */
     
-    background-color: #D9D9D9;
-    
+    /* z-index: 2; */
     z-index: 2;
 }
 
@@ -71,27 +78,31 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    color: white;
 }
 .price {
     position: absolute;
-    align-self: center;
-    justify-self: center;
+    /* align-self: center; */
+    /* justify-self: center; */
     z-index: 1;
-    /* transform: translateX(-50%); */
-    width: 0px;
-    height: 0;
-    border-left: 30px solid transparent;
-	border-right: 30px solid transparent;
-	border-bottom: 60px solid red;
-    transition: margin-bottom 1s ease;
-    margin-right: 20px;
-  
     
+    width: 85px;
+    height: 85px;
+    /* border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-bottom: 60px solid red; */
+    transition: bottom 1s ease;
+    margin-right: 20px;
+    background: url("img/meepo.svg");
+    background-size: cover;
+    bottom: 40px;
+    left: 20px;
+    z-index: 1;
 }
 .anim {
+    bottom: 90px;
     
     
-    margin-bottom: 80px;
 }
 
 

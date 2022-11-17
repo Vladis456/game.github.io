@@ -6,7 +6,6 @@ const count = document.querySelector(".count")
 let num = 0
 let time = document.querySelector(".time")
 let timer;
-
 let gameTime = 60;
 
 const getRandomElement = () => {
@@ -18,18 +17,17 @@ button.addEventListener("click", ()=> {
     countdown() 
 });
 
-
-
 const countdown = () => {
-    
     time.innerHTML = "ОСТАЛОСЬ ВРЕМЕНИ: " + gameTime;
     gameTime--;
     let i = getRandomElement();
     i.classList.add("anim");
     setTimeout(() => i.classList.remove("anim"), Math.floor(Math.random() * 1500));
     if (gameTime < 0) {
-        
+        num = 0
+        count.innerHTML = "COINS: " + num
         gameTime = 60;
+        time.innerHTML = "ОСТАЛОСЬ ВРЕМЕНИ: " + gameTime
         clearTimeout(timer)
         alert("gg")
     }
@@ -47,7 +45,7 @@ const resetClick = () => {
 price.forEach(item => {
     item.addEventListener("click", ()=> {
         if (isClick) {
-            count.innerHTML = "ОЧКИ: " + num
+            count.innerHTML = "COINS: " + num
             item.classList.remove("anim")
             num++;
             console.log(num)
@@ -59,9 +57,12 @@ price.forEach(item => {
 });
 
 endButton.addEventListener("click", ()=> {
+    num = 0
+    count.innerHTML = "COINS: " + num
     gameTime = 60;
+    time.innerHTML = "ОСТАЛОСЬ ВРЕМЕНИ: " + gameTime
     clearTimeout(timer)
-    alert("gg")
+    
 })
 
 
